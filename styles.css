@@ -84,5 +84,29 @@ input {
   margin-left: 1em;
 }
 
+.top-right-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap:30px;
+  margin-top:1rem;
+}
 
+.top-right-wrap > img {
+  border-radius: 50%;
+  background-color: #22d3ee;
+}
 
+.top-right-wrap > p {
+  width:30%;
+  align-self: center;
+  margin-right:1rem;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.top-right-wrap > svg {align-self: center;}
+
+.top-right-wrap {
+  width: 100%;
+}

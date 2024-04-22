@@ -88,8 +88,8 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap:30px;
-  margin-top:1rem;
+  gap: 30px;
+  margin-top: 1rem;
 }
 
 .top-right-wrap > img {
@@ -98,15 +98,37 @@ input {
 }
 
 .top-right-wrap > p {
-  width:30%;
+  width: 30%;
   align-self: center;
-  margin-right:1rem;
+  margin-right: 1rem;
   font-weight: 900;
   font-size: 1.5em;
 }
 
-.top-right-wrap > svg {align-self: center;}
+.top-right-wrap > svg {
+  align-self: center;
+}
 
 .top-right-wrap {
   width: 100%;
+}
+
+.bottom-left-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-left-area > img {
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+.bottom-left-area > div > span {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.bottom-left-area > div {
+  margin-left: 1em;
 }

@@ -9,7 +9,8 @@
 
 :root {
   --main-font: "roboto";
-  --blue:#38bdf8 ;
+  --blue: #22d3ee;
+  --background: #e2e8f0;
 }
 
 body {
@@ -23,11 +24,11 @@ body {
   height: 100%;
   grid-template-rows: 1fr 4fr;
 }
-
+/* Sidebar content */
 .sidebar {
   grid-row: 1 / 3;
   background: var(--blue);
-  color:white;
+  color: white;
 }
 
 .sidebar > div {
@@ -52,3 +53,36 @@ li span {
 .sidebar-bottom {
   margin-top: 4.5rem;
 }
+
+/*Header content*/
+
+header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas:
+    "search profile"
+    "intro buttons ";
+}
+
+input {
+  grid-area: "search";
+}
+
+.top-left-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 8%;
+}
+
+.top-left-area > input {
+  height: 1.5rem;
+  width: 85%;
+  border-radius: 20px;
+  background: var(--background);
+  margin-left: 1em;
+}
+
+
+
